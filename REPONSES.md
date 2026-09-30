@@ -5,35 +5,36 @@ Q01: <réponse>
 commande: <commande(s) utilisée(s)>
 -->
 
-Q01: 
-commande: 
+Q01: 32
+commande: git rev-list --count depart
 
-Q02: 
-commande: 
+Q02: Sarah Benali
+commande: git blame src/format.js
 
-Q03: 
-commande: 
+Q03: 4459c91715f9b1c97cf4776ad2e5afbdb3aa7051
+commande: git bisect start depart v0.2.0
+          git bisect run node scripts/controle-alertes.js
 
-Q04: 
-commande: 
+Q04: sk_live_01de6ba0c9f4d846
+commande: git log -S "API_KEY" -p depart
 
-Q05: 
-commande: 
+Q05: 11544ab934db75adbe18115b8c463b52bdb4296a
+commande: git log --diff-filter=D --summary depart
 
-Q06: 
-commande: 
+Q06: 17
+commande: git rev-list --count v0.2.0..v1.0.0
 
-Q07: 
-commande: 
+Q07: commit
+commande: git cat-file -t essai-perf
 
-Q08: 
-commande: 
+Q08: experiment/cache-redis
+commande: git branch -r --no-merged main
 
-Q09: 
-commande: 
+Q09: src/utils.js
+commande: git log --follow --name-status --oneline src/outils.js
 
-Q10: 
-commande: 
+Q10: Nathan Robin (15) 
+commande: git shortlog -sn depart
 
 Q11: 
 commande: 
