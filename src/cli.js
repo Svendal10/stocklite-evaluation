@@ -10,13 +10,11 @@ switch (commande) {
   case 'lister':
     console.log(formaterTableau(stock.lister()));
     break;
- HEAD
   case 'export':
     console.log(versCsv(stock));
-
+    break;
   case 'alertes':
     console.log(formaterTableau(stock.alertes()) || 'Aucune alerte');
- main
     break;
   default:
     console.error(`Commande inconnue : ${commande}`);
