@@ -11,11 +11,14 @@ export class Stock {
   retirer(ref, quantite) {
     const p = this.#produits.get(ref);
     if (!p) throw new Error(`Produit inconnu (référence ${ref})`);
-    // TODO: gérer les quantités négatives
+    if (!Number.isInteger(quantite) || quantite <= 0) {
+      throw new Error('Quantité invalide : entier positif attendu');
+    }
     if (quantite > p.quantite) throw new Error('Quantité en stock insuffisante');
     p.quantite -= quantite;
     return p;
   }
+
 
   obtenir(ref) {
     return this.#produits.get(ref) ?? null;

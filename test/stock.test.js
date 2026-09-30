@@ -26,3 +26,16 @@ test('retirer refuse un stock insuffisant ou un produit inconnu', () => {
 test('ajouter refuse une quantité invalide', () => {
   assert.throws(() => new Stock().ajouter('A1', 'Vis', -3), /invalide/);
 });
+
+test('retirer doit refuser une quantite negative ou invalide', () => {
+  const stock = new Stock();
+  stock.ajouter('P01', 'Stylo', 10);
+
+  assert.throws(
+    () => stock.retirer('P01', -5),
+    
+  );
+  assert.throws(
+    () => stock.retirer('P01', 0),
+  );
+});
