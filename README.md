@@ -14,7 +14,11 @@ node src/cli.js lister
 
 - Ajout et retrait de produits
 - Affichage en console
+HEAD
+- Import depuis l'ancien format texte
+- Export CSV
 - Alertes triées par urgence
+ main
 
 ## Licence
 
