@@ -36,17 +36,17 @@ commande: git log --follow --name-status --oneline src/outils.js
 Q10: Nathan Robin (15) 
 commande: git shortlog -sn depart
 
-Q11: 
-commande: 
+Q11: 24/03/2026
+commande: git show v1.0.0
 
-Q12: 
-commande: 
+Q12: git log --oneline --grep="Revert" depart
+commande: "feat(cli): bannière de démarrage"
 
-Q13: 
-commande: 
+Q13: de5637a 
+commande: git log --oneline --grep="fix/valeur-totale" depart
 
-Q14: 
-commande: 
+Q14: 21
+commande: git diff --stat v0.1.0 v1.0.0 -- src/stock.js
 
-Q15: 
-commande: 
+Q15: 6d6b920
+commande: git log --oneline -S "TODO: gérer les quantités négatives" depart
